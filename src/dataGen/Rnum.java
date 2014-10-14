@@ -3,7 +3,7 @@ package dataGen;
 import java.util.Random;
 
 /**
- * Gera um valor aleatório.
+ * Gera um valor aleatÃ³rio.
  * 
  * @see Rnum
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
@@ -14,20 +14,20 @@ public class Rnum implements Rgen<Integer> {
     private Random r;
     private int limit;
 
-    /** Construtor Padrão */
+    /** Construtor PadrÃ£o */
     public Rnum() {
         limit = 107374182;
         r = new Random();
     }
 
-    /** Construtor Padrão */
+    /** Construtor PadrÃ£o */
     public Rnum(int l) {
         limit = l;
         r = new Random();
     }
 
     /**
-     * Função que gera uma número Aleatório
+     * FunÃ§Ã£o que gera uma nÃºmero AleatÃ³rio
      * 
      * @return Interger
      */

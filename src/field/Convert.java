@@ -1,7 +1,7 @@
 package field;
 /**
- * Essa classe é composta por funções estáticas que tem como objetivo obter um valor e 
- * serializa-lo ou desserializa-lo. Cada função recebe o valor da variável e
+ * Essa classe Ã© composta por funÃ§Ãµes estÃ¡ticas que tem como objetivo obter um valor e 
+ * serializa-lo ou desserializa-lo. Cada funÃ§Ã£o recebe o valor da variÃ¡vel e
  * o seu tamanho em bytes. Ex.: byteToInt(vetor de bytes, quantidade de bytes);
  * 
  * @see Convert
@@ -11,14 +11,14 @@ package field;
  */
 public class Convert {
     /**
-     * Método byteToInt: Converte um vetor de bytes em um valor inteiro.
+     * Mï¿½todo byteToInt: Converte um vetor de bytes em um valor inteiro.
      *
      * @param b
      *          : Vetor de bytes contendo o valor a ser desserializado.
      * @param size
-     *          : Número de bytes do vetor de entrada.
+     *          : Nï¿½mero de bytes do vetor de entrada.
      * 
-     * @return Um valor de tipo int obtido a partir da desserialização do vetor de bytes.
+     * @return Um valor de tipo int obtido a partir da desserializaï¿½ï¿½o do vetor de bytes.
      */
     public static int byteToInt(byte[] b, int size) {
         int value = 0, shift;
@@ -30,14 +30,14 @@ public class Convert {
     }
 
     /**
-     * Método byteToLong: Converte um vetor de bytes em um valor long.
+     * Mï¿½todo byteToLong: Converte um vetor de bytes em um valor long.
      *
      * @param b
      *          : Vetor de bytes contendo o valor a ser desserializado.
      * @param size
-     *          : Número de bytes do vetor de entrada.
+     *          : Nï¿½mero de bytes do vetor de entrada.
      * 
-     * @return Um valor de tipo long obtido a partir da desserialização do vetor de bytes.
+     * @return Um valor de tipo long obtido a partir da desserializaï¿½ï¿½o do vetor de bytes.
      */
     public static long byteToLong(byte[] b, int size) {
         long value = 0;
@@ -50,14 +50,14 @@ public class Convert {
     }
 
     /**
-     * Método byteToShort: Converte um vetor de bytes em um valor short.
+     * Mï¿½todo byteToShort: Converte um vetor de bytes em um valor short.
      * 
      * @param b
      *          : Vetor de bytes contendo o valor a ser desserializado.
      * @param size
-     *          : Número de bytes do vetor de entrada.
+     *          : Nï¿½mero de bytes do vetor de entrada.
      *                  
-     * @return Um valor de tipo short obtido a partir da desserialização do vetor de bytes.
+     * @return Um valor de tipo short obtido a partir da desserializaï¿½ï¿½o do vetor de bytes.
      */
     public static short byteToShort(byte[] b, int size) {
         short value = 0;
@@ -70,14 +70,14 @@ public class Convert {
     }
 
     /**
-     * Método intToByte: Convete de um valor inteiro em um vetor de bytes.
+     * Mï¿½todo intToByte: Convete de um valor inteiro em um vetor de bytes.
      *
      * @param num
      *            : Um valor do tipo int.
      * @param size
-     *            : Número de bytes do vetor de saída.
+     *            : Nï¿½mero de bytes do vetor de saï¿½da.
      *   
-     * @return Um vetor de bytes obtido a partir da serialização do valor do inteiro.
+     * @return Um vetor de bytes obtido a partir da serializaï¿½ï¿½o do valor do inteiro.
      */
     public static byte[] intToByte(int num, int size) {
         byte[] value = new byte[size];
@@ -90,14 +90,14 @@ public class Convert {
     }
 
     /**
-     * Método longToByte: Convete de um valor long em um vetor de bytes.
+     * Mï¿½todo longToByte: Convete de um valor long em um vetor de bytes.
      *
      * @param num
      *            : Um valor do tipo long.
      * @param size
-     *            : Número de bytes do vetor de saída.
+     *            : Nï¿½mero de bytes do vetor de saï¿½da.
      *  
-     * @return Um vetor de bytes obtido a partir da serialização do valor do long.
+     * @return Um vetor de bytes obtido a partir da serializaï¿½ï¿½o do valor do long.
      */
     public static byte[] longToByte(long num, int size) {
         byte[] value = new byte[size];
@@ -110,14 +110,14 @@ public class Convert {
     }
 
     /**
-     * Método shortToByte: Convete de um valor short em um vetor de bytes.
+     * Mï¿½todo shortToByte: Convete de um valor short em um vetor de bytes.
      * 
      * @param num
      *            : Um valor do tipo short.
      * @param size
-     *            : Número de bytes do vetor de saída.
+     *            : Nï¿½mero de bytes do vetor de saï¿½da.
      *            
-     * @return Um vetor de bytes obtido a partir da serialização do valor do short.
+     * @return Um vetor de bytes obtido a partir da serializaï¿½ï¿½o do valor do short.
      */
     public static byte[] shortToByte(short num, int size) {
         byte[] value = new byte[size];

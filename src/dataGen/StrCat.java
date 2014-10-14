@@ -1,22 +1,22 @@
 package dataGen;
 
 /**
- * Faz a concatenaÁ„o de duas Strings.
+ * Faz a concatena√ß√£o de duas Strings.
  * 
  * @see StrCat
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
  * 
  * @param <B>
- * 			: Gerador aleatÛrio do tipo B.
+ * 			: Gerador aleat√≥rio do tipo B.
  * @param <C>
- * 			: Gerador aleatÛrio do tipo C.
+ * 			: Gerador aleat√≥rio do tipo C.
  */
 public class StrCat<B, C> implements Mixer<String, B, C> {
     private String a;
     private String m;
     private String d;
 
-    /** Construtor Padr„o */
+    /** Construtor Padr√£o */
     public StrCat(String sa, String sm, String sd) {
         a = sa;
         m = sm;
@@ -24,7 +24,7 @@ public class StrCat<B, C> implements Mixer<String, B, C> {
     }
 
     /**
-     * FunÁ„o que une as Strings
+     * Fun√ß√£o que une as Strings
      * 
      * @return String
      */

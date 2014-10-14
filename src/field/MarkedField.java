@@ -15,20 +15,20 @@ public abstract class MarkedField implements VariableSizeField {
     public abstract byte getFieldMarker();
 
     public void read(ReadStream rs) throws IOException {
-        byte date, 
+        int date;
         // ler do arquivo
         date = rs.read();
         while ((date != -1) && (date != fieldMarker)) {
-              p.add(date);           
+              p.add((byte)date);           
               date = rs.read();
         }
         byte v[] = p.getContent();
-        unpack(p);
+        unpack(v);
     }
 
     public void write(WriteStream ws) throws IOException {
         byte v[] = pack();
         ws.write(v);
-        ws.write(fieldMarker);
+        ws.write(new byte[]{fieldMarker});
     }
 }

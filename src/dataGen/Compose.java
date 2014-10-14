@@ -1,10 +1,10 @@
 package dataGen;
 
 /**
- * Tem como objetivo combinar dois geradores de valores randÙmicos,
- * por meio de uma funÁ„o mix. A funÁ„o È recebida como par‚metro por meior de
+ * Tem como objetivo combinar dois geradores de valores rand√¥micos,
+ * por meio de uma fun√ß√£o mix. A fun√ß√£o √© recebida como par√¢metro por meior de
  * um objeto que implementa a interface mixer. Essa interface define apenas uma
- * funÁ„o A mix(B,C).
+ * fun√ß√£o A mix(B,C).
  * 
  * @see Compose
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
@@ -18,12 +18,12 @@ public class Compose<A, B, C> {
     private Mixer<A, B, C> m;
 
     /**
-     * Construtor padr„o.
+     * Construtor padr√£o.
      * 
      * @param b
-     *            : Um gerador de valores randÙmicos de tipo B.
+     *            : Um gerador de valores rand√¥micos de tipo B.
      * @param c
-     *            : Um gerador de valores randÙmicos de tipo C.
+     *            : Um gerador de valores rand√¥micos de tipo C.
      * @param m
      *            : Um mixer de tipos A,B e C.
      */
@@ -34,11 +34,11 @@ public class Compose<A, B, C> {
     }
 
     /**
-     * MÈtodo gen: Aplica a funÁ„o mix aos valore gerados pelos geradores de
-     * tipo B e C respectivamente, retornando o resultado o resultado da funÁ„o
+     * M√©todo gen: Aplica a fun√ß√£o mix aos valore gerados pelos geradores de
+     * tipo B e C respectivamente, retornando o resultado o resultado da fun√ß√£o
      * mix de tipo A.
      * 
-     * @return Um valor de tipo A obtido a partir da combinaÁ„o de dois valores
+     * @return Um valor de tipo A obtido a partir da combina√ß√£o de dois valores
      */
     public A gen() {
         return m.mix(b.gen(), c.gen());

@@ -2,7 +2,7 @@ package dataGen;
 
 /**
  * Tem como objetivo definir um gerador de um conjunto n valores
- * randÙmicos.
+ * ran√¥micos.
  * 
  * @see Rmult
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
@@ -14,12 +14,12 @@ public class Rmult<A> implements Rgen<A[]> {
     private int n;
 
     /**
-     * Construtor Padr„o:
+     * Construtor Padr√£o:
      * 
      * @param g
-     *            : Um gerador de dados randÙmicos de tipo A
+     *            : Um gerador de dados rand√¥micos de tipo A
      * @param m
-     *            : O n˙mero de dados a serem gerados.
+     *            : O n√∫mero de dados a serem gerados.
      */
     public Rmult(Rgen<A> g, int m) {
         this.g1 = g;
@@ -27,10 +27,10 @@ public class Rmult<A> implements Rgen<A[]> {
     }
 
     /**
-     * Gera um vetor de valores randÙmicos produzidos a partir do gerador g.
+     * Gera um vetor de valores rand√¥micos produzidos a partir do gerador g.
      * 
      * @return Um vetor de n de objetos do tipo A. Para se obter esse vetor o
-     *         gerador g1, passado comp par‚metro È chamada n vezes.
+     *         gerador g1, passado comp par√¢metro a chamada n vezes.
      * 
      */
     

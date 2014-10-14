@@ -9,9 +9,9 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Gerador simples baseado em tabela. A tabela é lida de um arquivo em formato
- * txt. Cada linha do arquivo é considerado como um item da tabela. O arquivo é
- * completamente carrefago no momento no momento da construção do objeto.
+ * Gerador simples baseado em tabela. A tabela Ã© lida de um arquivo em formato
+ * txt. Cada linha do arquivo Ã© considerado como um item da tabela. O arquivo Ã©
+ * completamente carreago no momento da construÃ§Ã£o do objeto.
  * 
  * @see Rtable
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.

@@ -2,7 +2,7 @@ package field;
 
 import java.io.IOException;
 /**
- * Essa classe é uma interface que contém métodos de escrita em arquivos.
+ * Essa classe Ã© uma interface que contÃ©m mÃ©todos de escrita em arquivos.
  * 
  * @see WhiteStream
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
@@ -11,7 +11,7 @@ import java.io.IOException;
  */
 public interface WriteStream {
 	/**
-     * Método write: É um método de escrita que deve ser implementado pelo programador.
+     * MÃ©todo write: Ã© um mÃ©todo de escrita que deve ser implementado pelo programador.
      * 
      * @param b
      * 			: Vetor de bytes a serem escritos no arquivo.

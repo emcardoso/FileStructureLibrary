@@ -3,14 +3,14 @@ package field;
 import java.io.IOException;
 
 /**
- * Interface Field define as operações básicas de campo. Essa classe define as
- * operações que devem ser implmentadas por qualquer campo. Uma atenção especial
- * deve ser dada a implementação dos métodos read e write que requerem como
- * parâmetros ReadStream e WriteStream respectivamente. A razão para a adoção
- * dessas interfaces, em dterimento das interfaces de java, é impedir que um
- * campo realize operaões inesperadas sob o stream de entrada/saída de dados. Se
- * o camo recebesse diretamente um InputStream, seria possível, por exemplo, que
- * o usuário inadivertamente fechasse o stream de entrada de dados e em seguida
+ * Interface Field define as operaÃ§Ãµes bÃ¡sicas de campo. Essa classe define as
+ * operaÃ§Ãµes que devem ser implmentadas por qualquer campo. Uma atenÃ§Ã£o especial
+ * deve ser dada a implementaÃ§Ã£o dos mÃ©todos read e write que requerem como
+ * parÃ¢metros ReadStream e WriteStream respectivamente. A razÃ£o para a adoÃ§Ã£o
+ * dessas interfaces, em dterimento das interfaces de java, Ã© impedir que um
+ * campo realize operaÃ§Ãµes inesperadas sob o stream de entrada/saÃ­da de dados. Se
+ * o camo recebesse diretamente um InputStream, seria possÃ­vel, por exemplo, que
+ * o usuÃ¡rio inadivertamente fechasse o stream de entrada de dados e em seguida
  * abrisse um novo arquivo.
  * 
  * @see Field
@@ -21,43 +21,43 @@ import java.io.IOException;
 public interface Field {
 
     /**
-     * Método de leitura de dados. Esse método deve implementar o mecanismo de
-     * leitura de dados de um stream de entrada (ReadStream). A razão para o uso
-     * de ReadStream ao invés de InputStream é meramente didática, impedindo
-     * qualquer modificação significante no Stream de entrada, por parte do
+     * Mï¿½todo de leitura de dados. Esse mï¿½todo deve implementar o mecanismo de
+     * leitura de dados de um stream de entrada (ReadStream). A razï¿½o para o uso
+     * de ReadStream ao invï¿½s de InputStream ï¿½ meramente didï¿½tica, impedindo
+     * qualquer modificaï¿½ï¿½o significante no Stream de entrada, por parte do
      * campo.
      * 
      * @param rs
      *            A entrada de dados de onde deve ser feita a leitura.
      * @throws IOException
-     *             Caso ocorra qualquer exceção de IO durante a leitura dos
+     *             Caso ocorra qualquer exceï¿½ï¿½o de IO durante a leitura dos
      *             dados.
      */
     abstract public void read(ReadStream rs) throws IOException;
 
     /**
-     * Método de escrita de dados. Esse método deve implementar o mecanismo de
+     * Mï¿½todo de escrita de dados. Esse mï¿½todo deve implementar o mecanismo de
      * escrita de dados, utilizando o WriteStream. Analogamene ao read, o uso do
-     * WriteStream, ao invés de InputStream é meramente didático.
+     * WriteStream, ao invï¿½s de InputStream ï¿½ meramente didï¿½tico.
      * 
      * @param ws
      *            A entrada de dados de onde deve ser feita a leitura.
      * @throws IOException
-     *             Caso ocorra qualquer exceção de IO durante a escrita dos
+     *             Caso ocorra qualquer exceï¿½ï¿½o de IO durante a escrita dos
      *             dados.
      */
     abstract public void write(WriteStream ws) throws IOException;
 
     /**
-     * A função pack converte o campo em um vetor de bytes.
+     * A funï¿½ï¿½o pack converte o campo em um vetor de bytes.
      * 
-     * @return Uma representação desse campo na forma de um vetor de bytes.
+     * @return Uma representaï¿½ï¿½o desse campo na forma de um vetor de bytes.
      */
     abstract public byte[] pack();
 
     /**
-     * A função unpack recebe um vetor de bytes e o usa para prencher o campo,
-     * convertando a informação em representação de baixo nível em dados.
+     * A funï¿½ï¿½o unpack recebe um vetor de bytes e o usa para prencher o campo,
+     * convertando a informaï¿½ï¿½o em representaï¿½ï¿½o de baixo nï¿½vel em dados.
      * 
      * @param b
      *            um vetor de bytes

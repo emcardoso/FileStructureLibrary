@@ -3,18 +3,18 @@ package dataGen;
 import java.util.TreeMap;
 
 /**
- * Essa classe tem como objetivo tornar um gerador de valores randômicos
+ * Essa classe tem como objetivo tornar um gerador de valores randÃ´micos
  * qualquer em um gerador que nunca gerar o mesmo valor mais de uma vez.
  * 
  * <p>
- * <b>ATENÇÂO </b>: Para evitar a repetição de valores essa classe utiliza uma
- * árvore Vermelho e preta para memorizar cada valor gerado, resultanto em
- * impcatos no consumo de memória e no tempo de execução.
+ * <b>ATENÃ‡Ã‚O </b>: Para evitar a repetiÃ§Ã£o de valores essa classe utiliza uma
+ * Ã¡rvore Vermelho e preta para memorizar cada valor gerado, o que tem 
+ * impcatos no consumo de memÃ³ria e no tempo de execuÃ§Ã£o.
  * </p>
  * <p>
- * Note que o método gen, dessa classe, irá invocar o método gen do gerado
- * passado como argumento, até que um valor diferente dos valores aramazenados
- * na árovre seja produzido. Por essa razão o uso de um objeto dessa classe pode
+ * Note que o mÃ©todo gen, dessa classe, irÃ¡ invocar o mÃ©todo gen do gerador
+ * passado como argumento, atÃ© que um valor diferente dos valores aramazenados
+ * na Ã¡rovre seja produzido. Por essa razÃ£o o uso de um objeto dessa classe pode
  * fazer com que o programa entre em loop.
  * </p>
  * .
@@ -30,8 +30,8 @@ public class Unique<A> implements Rgen<A> {
     private A key;
 
     /**
-     * Construtor Padrão a partir de um gerador g. Esse construtor seta o
-     * gerador de dados a ser tornado único e inicaliza a árvore balançada.
+     * Construtor PadrÃ£o a partir de um gerador g. Esse construtor seta o
+     * gerador de dados a ser tornado Ãºnico e inicaliza a Ã¡rvore balanceada.
      * 
      * @param g
      *            Um gerador de dados de tipo A.
@@ -43,11 +43,11 @@ public class Unique<A> implements Rgen<A> {
     }
 
     /**
-     * Gera um valor randômico único. O valor gerado é armazenado em um árovre
-     * balanceada, para consulta futura. Se o valor gerado já estiver presente
-     * na árovre, o método de gen do gerador g1 é invocado novamente.
+     * Gera um valor randÃ¢mico Ãºnico. O valor gerado Ã© armazenado em um Ã¡rovre
+     * balanceada, para consulta futura. Se o valor gerado jÃ¡ estiver presente
+     * na Ã¡rovre, o mÃ©todo de gen do gerador g1 Ã© invocado novamente.
      * 
-     * @return Valor randômico do tipo A
+     * @return Valor randÃ´mico do tipo A
      */
     public A gen() {
         key = g1.gen();

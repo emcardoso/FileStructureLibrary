@@ -3,7 +3,7 @@ package dataGen;
 import java.util.Random;
 
 /**
- * Gera uma string aleatÛria a partir de strings obtidas de arquivo.txt
+ * Gera uma string aleat√≥ria a partir de strings obtidas de arquivo.txt
  * 
  * @see Rletter
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
@@ -13,13 +13,13 @@ public class Rletter implements Rgen<Character> {
     /** Atributos */
     private Random l;
 
-    /** Construtor Padr„o */
+    /** Construtor Padr√£o */
     public Rletter() {
         l = new Random();
     }
 
     /**
-     * FunÁ„o que gera uma letra do alfabeto
+     * Fun√ß√£o que gera uma letra do alfabeto
      * 
      * @return Caracter
      */

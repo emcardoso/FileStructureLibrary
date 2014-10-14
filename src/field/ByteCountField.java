@@ -2,7 +2,7 @@ package field;
 
 import java.io.IOException;
 /**
- * Essa classe é composta por métodos de leitura e escrita de campos de tamanho variável com
+ * Essa classe Ã© composta por mÃ©todos de leitura e escrita de campos de tamanho variÃ¡vel com
  * contador de tamanho.
  * 
  * @see ByteCountField
@@ -13,7 +13,7 @@ import java.io.IOException;
 public abstract class ByteCountField implements VariableSizeField {
 
     private long fieldLength; // valor do contador
-    private int counterSize; // Número de bytes usado no contador (0-255)
+    private int counterSize; // Nï¿½mero de bytes usado no contador (0-255)
 
     public long getFieldLength() {
         return fieldLength;
@@ -23,7 +23,7 @@ public abstract class ByteCountField implements VariableSizeField {
     	this.counterSize = counterSize;
     }
     /**
-     * Método read: Lê uma quantidade de bytes determinada por counterSize.
+     * Mï¿½todo read: Lï¿½ uma quantidade de bytes determinada por counterSize.
      *
      * @param rs
      *          : Arquivo para leitura.
@@ -45,14 +45,14 @@ public abstract class ByteCountField implements VariableSizeField {
         unpack(buffer);
     }
     /**
-     * Método write: Escreve uma quantidade de bytes determinada por counterSize.
+     * Mï¿½todo write: Escreve uma quantidade de bytes determinada por counterSize.
      *
      * @param ws
      *          : Arquivo para escrita.
      * 
      * @return Vazio.
      */  
-    // função que escreve um campo de tamanho variável no arquivo de bytes
+    // funï¿½ï¿½o que escreve um campo de tamanho variï¿½vel no arquivo de bytes
     public void write(WriteStream ws) throws IOException {
         byte[] buffer = pack(); // transforma o campo em um vetor de byte
 
