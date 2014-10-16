@@ -11,14 +11,14 @@ package field;
  */
 public class Convert {
     /**
-     * M�todo byteToInt: Converte um vetor de bytes em um valor inteiro.
+     * Método byteToInt: Converte um vetor de bytes em um valor inteiro.
      *
      * @param b
      *          : Vetor de bytes contendo o valor a ser desserializado.
      * @param size
-     *          : N�mero de bytes do vetor de entrada.
+     *          : Número de bytes do vetor de entrada.
      * 
-     * @return Um valor de tipo int obtido a partir da desserializa��o do vetor de bytes.
+     * @return Um valor de tipo int obtido a partir da desserialização do vetor de bytes.
      */
     public static int byteToInt(byte[] b, int size) {
         int value = 0, shift;
@@ -30,14 +30,14 @@ public class Convert {
     }
 
     /**
-     * M�todo byteToLong: Converte um vetor de bytes em um valor long.
+     * Método byteToLong: Converte um vetor de bytes em um valor long.
      *
      * @param b
      *          : Vetor de bytes contendo o valor a ser desserializado.
      * @param size
-     *          : N�mero de bytes do vetor de entrada.
+     *          : Número de bytes do vetor de entrada.
      * 
-     * @return Um valor de tipo long obtido a partir da desserializa��o do vetor de bytes.
+     * @return Um valor de tipo long obtido a partir da desserialização do vetor de bytes.
      */
     public static long byteToLong(byte[] b, int size) {
         long value = 0;
@@ -50,14 +50,14 @@ public class Convert {
     }
 
     /**
-     * M�todo byteToShort: Converte um vetor de bytes em um valor short.
+     * Método byteToShort: Converte um vetor de bytes em um valor short.
      * 
      * @param b
      *          : Vetor de bytes contendo o valor a ser desserializado.
      * @param size
-     *          : N�mero de bytes do vetor de entrada.
+     *          : Número de bytes do vetor de entrada.
      *                  
-     * @return Um valor de tipo short obtido a partir da desserializa��o do vetor de bytes.
+     * @return Um valor de tipo short obtido a partir da desserialização do vetor de bytes.
      */
     public static short byteToShort(byte[] b, int size) {
         short value = 0;
@@ -70,14 +70,14 @@ public class Convert {
     }
 
     /**
-     * M�todo intToByte: Convete de um valor inteiro em um vetor de bytes.
+     * Método intToByte: Convete de um valor inteiro em um vetor de bytes.
      *
      * @param num
      *            : Um valor do tipo int.
      * @param size
-     *            : N�mero de bytes do vetor de sa�da.
+     *            : Número de bytes do vetor de saída.
      *   
-     * @return Um vetor de bytes obtido a partir da serializa��o do valor do inteiro.
+     * @return Um vetor de bytes obtido a partir da serialização do valor do inteiro.
      */
     public static byte[] intToByte(int num, int size) {
         byte[] value = new byte[size];
@@ -90,14 +90,14 @@ public class Convert {
     }
 
     /**
-     * M�todo longToByte: Convete de um valor long em um vetor de bytes.
+     * Método longToByte: Convete de um valor long em um vetor de bytes.
      *
      * @param num
      *            : Um valor do tipo long.
      * @param size
-     *            : N�mero de bytes do vetor de sa�da.
+     *            : Número de bytes do vetor de saída.
      *  
-     * @return Um vetor de bytes obtido a partir da serializa��o do valor do long.
+     * @return Um vetor de bytes obtido a partir da serialização do valor do long.
      */
     public static byte[] longToByte(long num, int size) {
         byte[] value = new byte[size];
@@ -110,12 +110,12 @@ public class Convert {
     }
 
     /**
-     * M�todo shortToByte: Convete de um valor short em um vetor de bytes.
+     * Método shortToByte: Convete de um valor short em um vetor de bytes.
      * 
      * @param num
      *            : Um valor do tipo short.
      * @param size
-     *            : N�mero de bytes do vetor de sa�da.
+     *            : Número de bytes do vetor de saída.
      *            
      * @return Um vetor de bytes obtido a partir da serializa��o do valor do short.
      */
