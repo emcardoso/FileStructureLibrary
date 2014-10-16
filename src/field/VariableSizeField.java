@@ -1,6 +1,6 @@
 package field;
 /**
- * Essa classe é uma interface para campos de tamanho variável.
+ * Interface para campos de tamanho variável.
  * 
  * @see VariableSizeField
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.

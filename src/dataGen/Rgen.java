@@ -2,7 +2,7 @@ package dataGen;
 
 /**
  * Interface Rgen especifica, que deve ser implementada por todo gerador de
- * dados AleatÛrio.
+ * dados Aleat√≥rio.
  * 
  * @see Rgen
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
@@ -11,10 +11,10 @@ package dataGen;
  */
 public interface Rgen<A> {
     /**
-     * MÈtodo gen(): Deve ser implementado pelo progrador gerando um resultado
-     * de tipo genÈrico A. Chamremos esses resultado de valores randÙmicos. Note
-     * que um valor randÙmico sÛ pode ser um objeto, j· que em Java7 uma
-     * vari·vel de tipo n„o pode ser instanciada para um tipo primitivo.
+     * M√©todo gen(): Deve ser implementado pelo progrador gerando um resultado
+     * de tipo gen√©rico A. Chamremos esses resultado de valores rand√¥micos. Note
+     * que um valor rand√¥mico s√≥ pode ser um objeto, j√° que em Java7 uma
+     * vari√°vel de tipo n√£o pode ser instanciada para um tipo primitivo.
      * 
      * @return Objeto do tipo A
      */

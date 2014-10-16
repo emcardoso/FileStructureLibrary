@@ -1,6 +1,6 @@
 package field;
 /**
- * Essa classe é composta por funções estáticas que tem como objetivo obter um valor e 
+ * Classe composta por funções estáticas que tem como objetivo obter um valor e 
  * serializa-lo ou desserializa-lo. Cada função recebe o valor da variável e
  * o seu tamanho em bytes. Ex.: byteToInt(vetor de bytes, quantidade de bytes);
  * 

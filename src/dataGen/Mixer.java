@@ -1,13 +1,13 @@
 package dataGen;
 /**
- * Interface composta por um método público que tem como objetivo pegar 
+ * Interface composta por um mÃ©todo pÃºblico que tem como objetivo pegar 
  * dois geradores (de tipos diferentes ou iguais) e criar um objeto composto.
  * 
  * @see Mixer
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
  * @since 21/08/2014
  * @param <A>
- * 			: Genérico retornado. 
+ * 			: GenÃ©rico retornado. 
  * @param <B>
  * 			: Gerador do tipo B.
  * @param <C>
@@ -15,14 +15,14 @@ package dataGen;
  */
 public interface Mixer<A, B, C> {
     /**
-     * Método mix: É o método que cria o objeto composto.
+     * MÃ©todo mix: Ã© o mÃ©todo que cria o objeto composto.
      *
      * @param b
      *          : Gerador do tipo B.
      * @param c
      *          : Gerador do tipo c.
      * 
-     * @return Composição dos dois geradores.
+     * @return ComposiÃ§Ã£o dos dois geradores.
      */
     public A mix(B b, C c);
 }

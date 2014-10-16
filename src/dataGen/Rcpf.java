@@ -3,7 +3,7 @@ package dataGen;
 import java.util.ArrayList;
 
 /**
- * Gera um CPF aleatório válido.
+ * Gera um CPF aleatÃ³rio vÃ¡lido.
  * 
  * @see Rcpf
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
@@ -14,12 +14,12 @@ public class Rcpf implements Rgen<String> {
     private ArrayList<Integer> listaAleatoria = new ArrayList<Integer>();
     private ArrayList<Integer> listaNumMultiplicados = null;
 
-    /** Construtor Padrão */
+    /** Construtor PadrÃ£o */
     public Rcpf() {
     }
 
     /**
-     * Função um cpf Aleatório
+     * Funï¿½ï¿½o um cpf AleatÃ³rio
      * 
      * @return String
      */
@@ -34,7 +34,7 @@ public class Rcpf implements Rgen<String> {
          * Aqui vamos concatenar todos os valores da lista em uma string. Por
          * que isso? Porque a formatacao que o ArrayList gera me
          * impossibilitaria de usar a mascara, pois junto com os numeros gerados
-         * ele tambem gera caracteres especias. Ex.: a saída de uma lista de
+         * ele tambem gera caracteres especias. Ex.: a saï¿½da de uma lista de
          * inteiros (de 1 a 5) seria essa: [1 , 2 , 3 , 4 , 5] Dessa forma o
          * sistema geraria a excecao ParseException
          */
@@ -65,7 +65,7 @@ public class Rcpf implements Rgen<String> {
     }
 
     /**
-     * Metodo para geracao de parte do nosso CPF (aqui geramos apenas os 9
+     * MÃ©todo para geraÃ§Ã£o de parte do nosso CPF (aqui geramos apenas os 9
      * primeiros digitos)
      * 
      * @return
@@ -78,7 +78,7 @@ public class Rcpf implements Rgen<String> {
     }
 
     /**
-     * Metodo para geracao do primeiro digito verificador (para isso nos
+     * MÃ©todo para geraÃ§Ã£o do primeiro digito verificador (para isso nos
      * baseamos nos 9 digitos aleatorios gerados anteriormente)
      * 
      * @return
@@ -112,7 +112,7 @@ public class Rcpf implements Rgen<String> {
     }
 
     /**
-     * Metodo para geracao do segundo digito verificador (para isso nos baseamos
+     * MÃ©todo para geraÃ§Ã£o do segundo digito verificador (para isso nos baseamos
      * nos 9 digitos aleatorios + o primeiro digito verificador)
      * 
      * @return

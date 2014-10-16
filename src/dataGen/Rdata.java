@@ -3,24 +3,22 @@ package dataGen;
 import java.util.Random;
 
 /**
- * Gera uma data aleatória respeitando as restrições de ano bissexto e quantidade
- * de dias em cada mês do ano.
+ * Gera uma data aleatÃ³ria respeitando as restriÃ§Ãµes de ano bissexto e quantidade
+ * de dias em cada mÃªs do ano.
  * 
  * @see Rdata
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
  * 
  */
 public class Rdata implements Rgen<String> {
-    /** Atributos */
     private Random g;
 
-    /** Construtor Padrão */
     public Rdata() {
         g = new Random();
     }
 
     /**
-     * Função que gera uma data Aleatória
+     * FunÃ§Ã£o que gera uma data AleatÃ³ria
      * 
      * @return String
      */

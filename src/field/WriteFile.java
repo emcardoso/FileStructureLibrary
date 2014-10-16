@@ -3,7 +3,7 @@ package field;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 /**
- * Essa classe é uma extenção da classe WriteStrem que contém métodos de escrita em arquivos.
+ * Extenção da classe WriteStrem que contém métodos de escrita em arquivos.
  * 
  * @see WriteFile
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.

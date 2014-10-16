@@ -2,7 +2,7 @@ package field;
 
 import java.io.IOException;
 /**
- * Essa classe é uma interface que contém métodos de leitura de arquivos.
+ * Interface que contÃ©m mÃ©todos de leitura de arquivos.
  * 
  * @see ReadStream
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
@@ -11,15 +11,15 @@ import java.io.IOException;
  */
 public interface ReadStream {
 	/**
-     * Método read: É um método de leitura que deve ser implementado pelo programador.
+     * MÃ©todo read: Ã© um mÃ©todo de leitura que deve ser implementado pelo programador.
      * 
      * @return Um valor inteiro obtido a partir da leitura do arquivo.
      */
 	public int read() throws IOException;
 	/**
-     * Método read: É um método de leitura que deve ser implementado pelo programador.
-     * Sua vantagem em relação ao método read anterior é que ele pode ler um vetor de bytes
-     * passando o vetor como parâmetro.
+     * MÃ©todo read: Ã© um mÃ©todo de leitura que deve ser implementado pelo programador.
+     * Sua vantagem em relaÃ§Ã£o ao mÃ©todo read anterior ï¿½ que ele pode ler um vetor de bytes
+     * passando o vetor como parï¿½metro.
      * 
      * @ param buffer[]
      * 				: Vetor de bytes
@@ -28,10 +28,10 @@ public interface ReadStream {
      */
     public int read(byte buffer[]) throws IOException;
     /**
-     * Método skip: É um método que salta um número de bytes determinado pelo parâmetro.
+     * MÃ©todo skip: Ã© um mÃ©todo que salta um nÃ©mero de bytes determinado pelo parï¿½metro.
      * 
      * @param n
-     * 			: Número de bytes.
+     * 			: NÃºmero de bytes.
      * 
      * @return Um valor inteiro obtido a partir da leitura do arquivo.
      */

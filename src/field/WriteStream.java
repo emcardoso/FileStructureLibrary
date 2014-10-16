@@ -2,7 +2,7 @@ package field;
 
 import java.io.IOException;
 /**
- * Essa classe é uma interface que contém métodos de escrita em arquivos.
+ * Interface que contém métodos de escrita em arquivos.
  * 
  * @see WhiteStream
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.

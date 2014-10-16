@@ -21,43 +21,43 @@ import java.io.IOException;
 public interface Field {
 
     /**
-     * M�todo de leitura de dados. Esse m�todo deve implementar o mecanismo de
-     * leitura de dados de um stream de entrada (ReadStream). A raz�o para o uso
-     * de ReadStream ao inv�s de InputStream � meramente did�tica, impedindo
-     * qualquer modifica��o significante no Stream de entrada, por parte do
+     * Método de leitura de dados. Esse método deve implementar o mecanismo de
+     * leitura de dados de um stream de entrada (ReadStream). A razão para o uso
+     * de ReadStream ao invés de InputStream é meramente didática, impedindo
+     * qualquer modificação significante no Stream de entrada, por parte do
      * campo.
      * 
      * @param rs
      *            A entrada de dados de onde deve ser feita a leitura.
      * @throws IOException
-     *             Caso ocorra qualquer exce��o de IO durante a leitura dos
+     *             Caso ocorra qualquer exceção de IO durante a leitura dos
      *             dados.
      */
     abstract public void read(ReadStream rs) throws IOException;
 
     /**
-     * M�todo de escrita de dados. Esse m�todo deve implementar o mecanismo de
+     * Método de escrita de dados. Esse método deve implementar o mecanismo de
      * escrita de dados, utilizando o WriteStream. Analogamene ao read, o uso do
-     * WriteStream, ao inv�s de InputStream � meramente did�tico.
+     * WriteStream, ao invés de InputStream é meramente didático.
      * 
      * @param ws
      *            A entrada de dados de onde deve ser feita a leitura.
      * @throws IOException
-     *             Caso ocorra qualquer exce��o de IO durante a escrita dos
+     *             Caso ocorra qualquer exceção de IO durante a escrita dos
      *             dados.
      */
     abstract public void write(WriteStream ws) throws IOException;
 
     /**
-     * A fun��o pack converte o campo em um vetor de bytes.
+     * A função pack converte o campo em um vetor de bytes.
      * 
-     * @return Uma representa��o desse campo na forma de um vetor de bytes.
+     * @return Uma representação desse campo na forma de um vetor de bytes.
      */
     abstract public byte[] pack();
 
     /**
-     * A fun��o unpack recebe um vetor de bytes e o usa para prencher o campo,
-     * convertando a informa��o em representa��o de baixo n�vel em dados.
+     * A função unpack recebe um vetor de bytes e o usa para prencher o campo,
+     * convertando a informação em representação de baixo nível em dados.
      * 
      * @param b
      *            um vetor de bytes

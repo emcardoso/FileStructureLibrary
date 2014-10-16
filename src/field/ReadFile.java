@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 /**
- * Essa classe é uma extenção da classe ReadStream que contém métodos de leitura de arquivos.
+ * ExtenÃ§Ã£o da classe ReadStream que contÃ©m mÃ©todos de leitura de arquivos.
  * 
  * @see ReadFile
  * @author Elton M Cardoso, Filipe Mussi, Pedro Medeiros.
