@@ -15,7 +15,7 @@ import java.io.IOException;
  * @since 21/08/2014
  */
 
-public abstract class FixedSizeField implements Field {
+public abstract class FixedSizeField implements Field{
 
     private int size;
 
