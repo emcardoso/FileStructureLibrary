@@ -8,9 +8,11 @@ import field.ReadFile;
 
 public class testeReader {
 
-    public static void main(String[] args) throws IOException {
+    private static ReadFile ler;
+
+	public static void main(String[] args) throws IOException {
         LinkedList<byte[]> list = new LinkedList<byte[]>();
-        ReadFile ler = new ReadFile("nomes_masculinos.txt");
+        ler = new ReadFile("nomes_masculinos.txt");
         int i = 0, date, achou = 0;
         byte fieldMarker = '\n';
         // ler do arquivo

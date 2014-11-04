@@ -21,6 +21,7 @@ public class Rtable implements Rgen<String> {
 
     private Random g;
     private List<String> lista;
+	private BufferedReader bf;
 
     /**
      * Construtor.
@@ -35,7 +36,7 @@ public class Rtable implements Rgen<String> {
         lista = new ArrayList<String>();
         g = new Random();
         try {
-            BufferedReader bf = new BufferedReader(new FileReader(new File(
+            bf = new BufferedReader(new FileReader(new File(
                     caminho)));
             lista.clear();
             while (bf.ready()) {

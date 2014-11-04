@@ -63,6 +63,6 @@ public interface Field {
      *            um vetor de bytes
      * @return Preenche o campo com os dados do vetor b.
      */
-    public abstract void unpack(byte b[]);
+    abstract public void unpack(byte b[]);
 
 }

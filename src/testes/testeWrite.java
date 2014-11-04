@@ -7,13 +7,15 @@ import field.*;
 
 public class testeWrite {
 
-    public static void main(String[] args) throws IOException {
+    private static WriteStream out;
+
+	public static void main(String[] args) throws IOException {
     	
     	String caminho = "Arquivo.txt";
         String texto = "Arquivo de bytes";
         byte[] dados = texto.getBytes();
 
-        WriteStream out = new WriteFile(caminho);
+        out = new WriteFile(caminho);
         out.write(dados);
     }
 }

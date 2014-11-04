@@ -14,10 +14,14 @@ public abstract class FixedSizeRecord implements Record{
 		return size;
 	}
 	
-	public void read(ReadStream rs) throws IOException{
-        	for(int i=0;i<size;i++){
-        	int tam = rs.read();
-        	
-        }
-    }
+	// a serem implementados pelo programador
+	abstract public void read(ReadStream rs) throws IOException;
+	abstract public void write(WriteStream ws) throws IOException;
+	
+	// falta implementar
+	public byte[] pack(){
+		return null;
+	}
+	public void unpack(byte b[]){		
+	}
 }
