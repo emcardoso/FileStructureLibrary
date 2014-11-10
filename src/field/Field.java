@@ -19,7 +19,6 @@ import java.io.IOException;
  */
 
 public interface Field {
-
     /**
      * Método de leitura de dados. Esse método deve implementar o mecanismo de
      * leitura de dados de um stream de entrada (ReadStream). A razão para o uso

@@ -15,7 +15,10 @@ public abstract class FixedSizeRecord implements Record{
 	}
 	
 	// a serem implementados pelo programador
-	abstract public void read(ReadStream rs) throws IOException;
+	public void read(ReadStream rs) throws IOException{
+		Field[] fields = new Field[size];
+		fields = concat(rs);
+	}
 	abstract public void write(WriteStream ws) throws IOException;
 	
 	// falta implementar
@@ -23,5 +26,11 @@ public abstract class FixedSizeRecord implements Record{
 		return null;
 	}
 	public void unpack(byte b[]){		
+	}
+	public Field[] concat(ReadStream rs) throws IOException{
+		byte buffer[] = new byte[128];
+		rs.read(buffer);
+		unpack(buffer);
+		return null;             
 	}
 }
