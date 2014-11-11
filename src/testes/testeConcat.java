@@ -5,7 +5,6 @@ import field.*;
 public class testeConcat {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		byte[] vet1;
 		vet1 = concat();
 		System.out.println(unpack(vet1));
@@ -13,12 +12,12 @@ public class testeConcat {
 	}
 	
 	public static byte[] concat(){
-		int[] vet2 = {1, 2};
-		int[] vet3 = {3, 4};
+		byte[] vet2 = Convert.intToByte(2, 2);
+		byte[] vet3 = Convert.intToByte(4, 2);
 		byte[] vet4 = new byte[4];
 		System.arraycopy(vet2, 0, vet4, 0, vet2.length);
 		System.arraycopy(vet3, 0, vet4, vet2.length, vet3.length);
-		return null;
+		return vet4;
 	}
 	
 	public static int[] concat2(){
