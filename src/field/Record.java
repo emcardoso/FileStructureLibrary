@@ -8,5 +8,5 @@ public interface Record {
 	abstract public Field getField();
 	abstract public Field FieldAt(int i);
 	abstract public byte[] pack();
-	abstract public void unpack(byte b[]);
+	abstract public void unpack(Field b[]);
 }
