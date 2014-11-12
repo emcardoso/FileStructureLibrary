@@ -1,0 +1,21 @@
+package shapes;
+
+import graphics.Drawable;
+
+import java.awt.Color;
+
+public class GuiRecord extends Rect {
+
+	public GuiRecord(int x, int y, int w, int h, Color c) {
+		super(x, y, w, h, c);
+					
+	}
+	
+	
+	//teste
+	Drawable arestas[] = new Drawable[3];
+	//arestas[0] = new Rect(100,100,80,80,new Color(255,0,0));
+	
+	
+	
+}
