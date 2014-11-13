@@ -1,4 +1,4 @@
-package field;
+package utils;
 
 
 /**
@@ -81,6 +81,12 @@ public class BytePageList {
        }
        livePage.page[wpt % pageSize] = b;
        wpt++;
+    }
+    
+    public void add(byte b[]){
+    	for(int i=0; i < b.length; i++){
+    		add(b[i]);    		
+    	}
     }
 
    /**

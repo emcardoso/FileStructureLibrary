@@ -1,5 +1,5 @@
 package record;
 
-public abstract class ByteMarkerRecord implements VariableSizeRecord{
+public abstract class ByteMarkerRecord extends VariableSizeRecord{
 
 }

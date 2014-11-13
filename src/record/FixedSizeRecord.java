@@ -4,11 +4,14 @@ import java.io.IOException;
 import field.*;
 import IO.*;
 
-public abstract class FixedSizeRecord implements AbstractRecord{
-	private int size;
+public abstract class FixedSizeRecord extends AbstractRecord{
 	
-	public FixedSizeRecord(int size){
+	protected Field fields[];
+	private int size; // Tamanho do registro em Bytes;
+	
+	public FixedSizeRecord(int size, int numberOfFields){
 		this.size = size;
+		fields = new Field[numberOfFields];		
 	}
 	
 	public int getSize(){
@@ -17,11 +20,14 @@ public abstract class FixedSizeRecord implements AbstractRecord{
 	
 	// a serem implementados pelo programador
 	public void read(ReadStream rs) throws IOException{
-		Field[] fields = new Field[size];
+		
 		fields = concat(rs);
 		unpack(fields);
 	}
-	abstract public void write(WriteStream ws) throws IOException;
+	
+	public void write(WriteStream ws) throws IOException{
+	
+	}
 	
 	// falta implementar
 	public byte[] pack(){
