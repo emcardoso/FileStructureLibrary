@@ -1,13 +1,10 @@
 package record;
 
 import java.io.IOException;
+import field.*;
+import IO.*;
 
-import field.Field;
-import field.ReadStream;
-import field.Record;
-import field.WriteStream;
-
-public abstract class FixedSizeRecord implements Record{
+public abstract class FixedSizeRecord implements AbstractRecord{
 	private int size;
 	
 	public FixedSizeRecord(int size){

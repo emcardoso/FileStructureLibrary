@@ -1,8 +1,10 @@
-package field;
+package record;
 
 import java.io.IOException;
+import IO.*;
+import field.*;
 
-public interface Record {
+public interface AbstractRecord {
 	abstract public void write(WriteStream ws) throws IOException;
 	abstract public void read(ReadStream rs) throws IOException;
 	abstract public Field getField();

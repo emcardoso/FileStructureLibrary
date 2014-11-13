@@ -1,6 +1,7 @@
 package field;
 
 import java.io.IOException;
+import IO.*;
 /**
  * Classe composta por métodos de leitura e escrita de campos de tamanho variável com
  * contador de tamanho.
