@@ -1,6 +1,6 @@
 package testes;
 
-import field.Convert;
+import convert.*;
 
 public class testeCabecalho {
 

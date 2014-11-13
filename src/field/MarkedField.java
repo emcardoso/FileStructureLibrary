@@ -1,6 +1,7 @@
 package field;
 
 import java.io.IOException;
+import IO.*;
 
 public abstract class MarkedField implements VariableSizeField {
     protected byte fieldMarker;

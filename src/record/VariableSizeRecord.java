@@ -1,8 +1,6 @@
 package record;
 
-import field.Record;
-
-public interface VariableSizeRecord extends Record{
+public interface VariableSizeRecord extends AbstractRecord{
 	public byte[] buffer = new byte[128];
 }
 

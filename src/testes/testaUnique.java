@@ -8,7 +8,7 @@ public class testaUnique {
         testeRegistro reg;
         Rgen<String> cpf = new Unique<String>(new Rcpf());
         Rgen<String> nome = new Unique<String>(
-                new Rtable("nomes_femininos.txt"));
+                new Rtable("C:\\Users\\pedro_medeiros\\Documents\\GitHub\\FileStructureLibrary\\src\\dataFiles\\nomes_femininos.txt"));
         Rgen<Integer> vaga = new Unique<Integer>(new Rnum(100));
         Rgen<String> data = new Unique<String>(new Rdata());
 

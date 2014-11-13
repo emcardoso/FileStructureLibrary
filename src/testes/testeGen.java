@@ -7,7 +7,7 @@ public class testeGen {
     public static void main(String[] args) {
 
         Rgen<String> cpf = new Rcpf();
-        Rgen<String> nome = new Rtable("nomes_masculinos.txt");
+        Rgen<String> nome = new Rtable("C:\\Users\\pedro_medeiros\\Documents\\GitHub\\FileStructureLibrary\\src\\dataFiles\\nomes_masculinos.txt");
         // Rgen<String> nc = new StrCat<String,String>(nome,cpf,"","cpf:","");
         // Rgen<Integer> nat = new NatNum(5);
         StrCat<String, String> cat = new StrCat<String, String>("", " - ", "");
