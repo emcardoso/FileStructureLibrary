@@ -2,6 +2,9 @@ package field;
 
 import java.io.IOException;
 
+import utils.BytePageList;
+import IO.*;
+
 public abstract class MarkedField implements VariableSizeField {
     protected byte fieldMarker;
     private BytePageList p;

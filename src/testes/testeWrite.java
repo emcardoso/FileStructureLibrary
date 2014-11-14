@@ -1,9 +1,7 @@
 package testes;
 
 import java.io.IOException;
-
-import field.*;
-
+import IO.*;
 
 public class testeWrite {
 
@@ -11,7 +9,7 @@ public class testeWrite {
 
 	public static void main(String[] args) throws IOException {
     	
-    	String caminho = "Arquivo.txt";
+    	String caminho = "C:\\Users\\pedro_medeiros\\Documents\\GitHub\\FileStructureLibrary\\src\\dataFiles\\Arquivo.txt";
         String texto = "Arquivo de bytes";
         byte[] dados = texto.getBytes();
 

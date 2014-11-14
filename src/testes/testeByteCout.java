@@ -2,13 +2,13 @@ package testes;
 
 import java.io.IOException;
 import field.*;
-
+import IO.*;
 
 public class testeByteCout {
 	public static void main(String arg[]) throws IOException{
 		ByteCount count = new ByteCount();
 			
-		String caminho = "ByteCout.dat";
+		String caminho = "C:\\Users\\pedro_medeiros\\Documents\\GitHub\\FileStructureLibrary\\src\\dataFiles\\ByteCout.dat";
 		WriteStream out = new WriteFile(caminho);
 		ReadStream in = new ReadFile(caminho);
 		
