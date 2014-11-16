@@ -1,6 +1,14 @@
 package record;
 
-public abstract class VariableSizeRecord extends AbstractRecord{
-	public byte[] buffer = new byte[128];
+import field.Field;
+
+public abstract class VariableSizeRecord extends FieldArrayRecord{
+    
+	
+	public VariableSizeRecord(Field[] f) {
+		super(f);
+	}
+	
+
 }
 

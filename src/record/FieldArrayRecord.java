@@ -1,13 +1,26 @@
 package record;
 
 import java.io.IOException;
-import java.util.LinkedList;
 import IO.ReadStream;
 import IO.WriteStream;
 import field.Field;
+import utils.ByteStream;
 
+/**
+ * Implemnta um registro por meio de um vetor de campos. 
+ * Essa é uma impelementação simples, mas que não provê nenhum
+ * mecanismo de teste para determinar se os campos obedecem ou não
+ * qualquer restrição em relação ao tamanho do registro.
+ * Essa classe tem como objetivo servir de plataforma para implementação
+ * de outros tipos de registro, provendo implementações padrão para 
+ * algumas das funções de registro.
+ *
+ */
 public abstract class FieldArrayRecord extends AbstractRecord {
 
+	/**
+	 * Campo protegiso fileds[] é um vetor de campos.
+	 */
 	protected Field fields[];
 	
 	public FieldArrayRecord(Field[] f){
@@ -33,27 +46,29 @@ public abstract class FieldArrayRecord extends AbstractRecord {
 	}
 
 	public byte[] pack() {
-		byte buff[], aux[];
-		int count = 0;
-		LinkedList< byte[] > bp = new LinkedList<byte[]>();
-		
-		for(int i = 0; i < fields.length; i++){
-		    buff = fields[i].pack();
-		    count += buff.length;
-		    bp.add(buff);
+		ByteStream bs = new ByteStream(512); 
+		try{
+			for(int i = 0; i < fields.length; i++ ){
+	             fields[i].write(bs);
+			}
+		}catch(IOException e){
+			e.printStackTrace();
+			System.out.println("IOException cautch when trying to pack record. ");
 		}
-		buff = new byte[count];
-		while(!bp.isEmpty()){
-		    aux = bp.removeFirst();
-			System.arraycopy(aux,0, buff, 0, aux.length);
-		}
-		return buff;
+		return bs.getBytes();
 	}
 
-	
 	public void unpack(byte b[]) {
+		ByteStream bs = new ByteStream(b); 
+		try{
+			for(int i = 0; i < fields.length; i++ ){
+	             fields[i].read(bs);
+			}
+		}catch(IOException e){
+			e.printStackTrace();
+			System.out.println("IOException cautch when trying to unpack record. ");
+		}
 		
-
 	}
 
 }

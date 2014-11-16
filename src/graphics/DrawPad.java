@@ -5,14 +5,14 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
-import java.awt.*;  
-import java.awt.event.*;  
-import javax.swing.*;  
-import javax.swing.event.*;  
-
 public class DrawPad extends JPanel  implements MouseListener{
 
-      private Drawable shapes[]; 
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private Drawable shapes[]; 
    
       public DrawPad(){
           super();         
