@@ -1,8 +1,10 @@
 package testes;
 
+import io.*;
+
 import java.io.IOException;
+
 import field.*;
-import IO.*;
 
 public class testeByteCout {
 	public static void main(String arg[]) throws IOException{

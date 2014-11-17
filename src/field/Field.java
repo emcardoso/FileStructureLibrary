@@ -1,7 +1,8 @@
 package field;
 
+import io.*;
+
 import java.io.IOException;
-import IO.*;
 
 /**
  * Interface Field define as operações básicas de campo. Essa classe define as

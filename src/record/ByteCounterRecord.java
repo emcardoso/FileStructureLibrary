@@ -1,10 +1,11 @@
 package record;
 
+import io.ReadStream;
+import io.WriteStream;
+
 import java.io.IOException;
 
 import utils.Convert;
-import IO.ReadStream;
-import IO.WriteStream;
 import field.Field;
 
 public abstract class ByteCounterRecord extends VariableSizeRecord{

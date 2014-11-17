@@ -1,9 +1,9 @@
 package testes;
 
+import io.*;
+
 import java.io.IOException;
 import java.util.LinkedList;
-
-import IO.*;
 
 public class testeReader {
 

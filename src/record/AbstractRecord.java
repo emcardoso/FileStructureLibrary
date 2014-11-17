@@ -1,7 +1,8 @@
 package record;
 
+import io.*;
 import java.io.IOException;
-import IO.*;
+
 import field.*;
 
 public abstract class AbstractRecord {

@@ -1,8 +1,10 @@
 package record;
 
+import io.ReadStream;
+import io.WriteStream;
+
 import java.io.IOException;
-import IO.ReadStream;
-import IO.WriteStream;
+
 import field.Field;
 import utils.ByteStream;
 

@@ -1,7 +1,8 @@
 package field;
 
+import io.*;
+
 import java.io.IOException;
-import IO.*;
 
 /**
  * Define um campo de tamnho fixo. Essa classe define os métodos read and write

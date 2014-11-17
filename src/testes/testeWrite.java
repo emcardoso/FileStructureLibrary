@@ -1,7 +1,8 @@
 package testes;
 
+import io.*;
+
 import java.io.IOException;
-import IO.*;
 
 public class testeWrite {
 

@@ -1,8 +1,10 @@
 package record;
 
+import io.*;
+
 import java.io.IOException;
+
 import field.*;
-import IO.*;
 
 public abstract class FixedSizeRecord extends FieldArrayRecord{
 	

@@ -1,9 +1,9 @@
 package utils;
 
-import java.io.IOException;
+import io.ReadStream;
+import io.WriteStream;
 
-import IO.ReadStream;
-import IO.WriteStream;
+import java.io.IOException;
 import java.io.IOException;
 
 public class ByteStream implements ReadStream, WriteStream{
