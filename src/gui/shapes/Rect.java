@@ -43,5 +43,13 @@ public class Rect implements Drawable{
 		public boolean inBounds(int x1, int y1) {
 			return (x1 >= x) && (x1 <= x+w) && (y1 >= y) && (y1 <= y+h); 
 		}
+		
+		public int getX(){
+			return x;
+		}
+		
+		public int getY(){
+			return y;
+		}
 	}
 

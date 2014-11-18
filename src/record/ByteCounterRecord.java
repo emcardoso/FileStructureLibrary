@@ -37,6 +37,7 @@ public abstract class ByteCounterRecord extends VariableSizeRecord{
         int c = Convert.byteToInt(counter, counterSize);
         byte buff[] = new byte[c];
         rs.read(buff);
+        unpack(buff);
 	}
 
 }

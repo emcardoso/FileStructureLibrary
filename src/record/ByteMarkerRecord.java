@@ -10,5 +10,7 @@ public abstract class ByteMarkerRecord extends VariableSizeRecord{
 		super(f);
 	    this.mark = mark;	
 	}
+	
+	
     
 }
