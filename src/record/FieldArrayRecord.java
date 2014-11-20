@@ -28,6 +28,10 @@ public abstract class FieldArrayRecord extends AbstractRecord {
 	public FieldArrayRecord(Field[] f){
 		   fields = f;
 	}
+	
+	public FieldArrayRecord(int numberOfFields){
+	    fields = new Field[numberOfFields];
+	}
 		
 	
 	public void write(WriteStream ws) throws IOException {

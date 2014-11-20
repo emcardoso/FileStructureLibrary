@@ -16,6 +16,11 @@ public abstract class FixedSizeRecord extends FieldArrayRecord{
 		this.size = size;		
 	}
 	
+	public FixedSizeRecord(int size, int numberOfFields){
+	    super(numberOfFields);
+	    this.size = size;	
+	}
+	
 	public int getSize(){
 		return size;
 	}
@@ -38,7 +43,6 @@ public abstract class FixedSizeRecord extends FieldArrayRecord{
         	buff = fill(buff,size);
         }
 		ws.write(buff);
-
 	}
 
 }
