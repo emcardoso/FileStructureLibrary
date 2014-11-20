@@ -36,4 +36,14 @@ public interface ReadStream {
      * @return Um valor inteiro obtido a partir da leitura do arquivo.
      */
     public void skip(int n) throws IOException;
+    /**
+     * Método eof: retorna verdadeiro se o fim da entrada foi atingido, falso caso 
+     * contrário.
+     * 
+     * @param n
+     * 			: Número de bytes.
+     * 
+     * @return Um valor inteiro obtido a partir da leitura do arquivo.
+    */
+    public boolean eof()  throws IOException;
 }

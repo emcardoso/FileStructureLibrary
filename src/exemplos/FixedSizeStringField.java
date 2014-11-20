@@ -18,7 +18,7 @@ public class FixedSizeStringField extends FixedSizeField {
 	public byte[] pack() {
 		try{
           byte buff[] = new byte[getSize()];
-		  byte fonte[] = str.getBytes("ASCII");
+		  byte fonte[] = str.getBytes("US-ASCII");
 		  System.arraycopy(fonte, 0, buff, 0, Math.min(fonte.length,buff.length)); 
 		  return buff;
 		}catch(Exception e){
@@ -30,7 +30,7 @@ public class FixedSizeStringField extends FixedSizeField {
 
 	public void unpack(byte[] b) {
 		try{
-			  str = new String(b,"ASCII");
+			  str = new String(b,"US-ASCII");
 	    }catch(Exception e){
 				e.printStackTrace();
 				System.exit(1);

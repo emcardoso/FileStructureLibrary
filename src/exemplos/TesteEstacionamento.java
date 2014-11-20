@@ -14,10 +14,12 @@ public class TesteEstacionamento {
 	private RandomPlaca plc;
 	private RandomData dt;
 	private RandomTempo t;
+	private RandomName nome;
 	private int id;
 	
     public TesteEstacionamento(){
           id = 0;
+          nome = new RandomName(1,3);
           plc = new RandomPlaca();
           dt = new RandomData();
           t = new RandomTempo();
@@ -27,9 +29,9 @@ public class TesteEstacionamento {
 		try {
 			saida = new WriteFile("Saida.txt");
 			for(int i = 0; i < nRecords; i++){
-				r = new Estacionamento(id++, plc.gen(),"Ana Maria",dt.gen(),t.gen(),t.gen());
+				r = new Estacionamento(id++, plc.gen(),nome.gen(),dt.gen(),t.gen(),t.gen());
 			    r.write(saida);
-			    //System.out.println(r.toString());
+			    System.out.println(r.toString());
 			}
 			
 		    
@@ -42,10 +44,10 @@ public class TesteEstacionamento {
 	
 	
 	public void readFile(){
-		boolean eof = false;
+		
 		try {
 			entrada = new ReadFile("Saida.txt");
-			while(!eof){
+			while(!entrada.eof()){
 				r = new Estacionamento();
 			    r.read(entrada);
 			    System.out.println(r.toString()); 
@@ -54,13 +56,14 @@ public class TesteEstacionamento {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-			eof = true;
 		}
 	}
 	
 	public static void main(String args[]){
 		TesteEstacionamento t = new TesteEstacionamento();
-		t.makeFile(10);
+		t.makeFile(1000);
+		System.out.println(" ---- registros escritos no arquivo   ----- ");
+		System.out.println(" ---- Lendo o Arquivo   ----- ");
 		t.readFile();
 	}
 }

@@ -28,7 +28,7 @@ public class Tempo extends FixedSizeField{
 	}
 	
 	public String toString(){
-	   return "" + hm[0] + " : " + hm[1];
+	   return "" + hm[0] + "h : " + hm[1] + "m";
 	}
 	
 	public void setTempo(int h, int m){

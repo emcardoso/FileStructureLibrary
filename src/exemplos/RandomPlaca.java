@@ -27,7 +27,7 @@ public class RandomPlaca implements Rgen<String> {
 	    		s+= l.gen();
 	    	}
 	    	s += "-";
-	     	for(int i =0; i < 3; i++){
+	     	for(int i =0; i < 4; i++){
 	    		s += d.gen();
 	    	}
 	     	return s;

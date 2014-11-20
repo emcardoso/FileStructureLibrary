@@ -8,21 +8,21 @@ import record.*;
 public class Estacionamento extends FixedSizeRecord{
     
 	public Estacionamento() {
-		super(128, 6);
-		fields[0] = new Inteiro();   //ID
-		fields[1] = new FixedSizeStringField(8);   // Placa
-		fields[2] = new FixedSizeStringField(108); // Nome
-		fields[3] = new Data(); // Data de entrada
-		fields[4] = new Tempo(); // Hora de entrada;
-		fields[5] = new Tempo(); // Hora de Saida;
+		super(70, 6);
+		fields[0] = new Inteiro();   //ID                   4 bytes
+		fields[1] = new FixedSizeStringField(8);   // Placa 8 bytes
+		fields[2] = new FixedSizeStringField(50); // Nome 50 bytes
+		fields[3] = new Data(); // Data de entrada           4 bytes
+		fields[4] = new Tempo(); // Hora de entrada;         2 bytes
+		fields[5] = new Tempo(); // Hora de Saida;           2 bytes
 	}
 	
 	public Estacionamento(int id, String placa, String nome, Data entrada, 
 			Tempo tEntrada, Tempo tSaida) {
-		super(128, 6);
+		super(70, 6);
 		fields[0] = new Inteiro(id);   //ID
 		fields[1] = new FixedSizeStringField(8, placa);   // Placa
-		fields[2] = new FixedSizeStringField(108, nome); // Nome
+		fields[2] = new FixedSizeStringField(50, nome); // Nome
 		fields[3] = entrada; // Data de entrada
 		fields[4] = tEntrada; // Hora de entrada;
 		fields[5] = tSaida; // Hora de Saida;

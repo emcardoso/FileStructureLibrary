@@ -23,10 +23,11 @@ public class Data extends FixedSizeField {
 	
 	public byte[] pack() {
 		int v = 0;
-		int c = (2^16) - 1;
-		v = (v & (dia << 24)) |
-		    (v & (mes << 16)) |
-		    (v & (ano & c));
+		int c = (2^16)-1 ;
+		v = ((dia << 24)) |
+		    ((mes << 16)) |
+		    ((ano & 0xFFFF));
+
 		return Convert.intToByte(v,4);
 	}
 	
@@ -39,10 +40,9 @@ public class Data extends FixedSizeField {
 	
 	public void unpack(byte[] b) {
 		int v = Convert.byteToInt(b,4);
-		int c = (0xFFFF);
-		ano = (v & c); 
+		ano = (v & 0xFFFF ); 
 		mes = (v >> 16) & 0xFF;
-		mes = (v >> 24) & 0xFF;
+		dia = (v >> 24) & 0xFF;
 	}
 	
 	public String toString(){

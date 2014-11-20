@@ -20,4 +20,8 @@ public class ReadFile extends FileInputStream implements ReadStream {
     public void skip(int n) throws IOException {
         // TODO Auto-generated method stub
     }
+
+	public boolean eof() throws IOException {
+		return available() == 0;
+	}
 }
